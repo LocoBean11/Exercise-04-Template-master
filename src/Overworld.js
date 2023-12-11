@@ -29,7 +29,7 @@ class Overworld extends Phaser.Scene {
         // add slime
         const slimeSpawn = map.findObject('Spawns', obj => obj.name === 'slimeSpawn');
         // Replace 32 with coordinates slimeSpawn.x and y 
-        this.slime = this.physics.add.sprite(slimeSpawn.x, slimeSpawn.y, 'slime', 0); 
+        this.slime = this.physics.add.sprite(32, 32, 'slime', 0); 
         this.slime.body.setCollideWorldBounds(true);
 
         // slime animation
